@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- SEO -->
+  <title>Заголовок</title>
+  <meta name="description" content="Описание">
+  <meta name="keywords" content="Ключевые слова">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+  @@include('_header.html')
+
+  <main>
+
+    <section>
+      <div class="container">
+        <div class="bread">
+          <a href="#">Главная</a>
+          <img src="img/bread.svg" alt="">
+          <a href="#">Ремонт Xiaomi Redmi Note 9s / 9 Pro</a>
+          <img src="img/bread.svg" alt="">
+          <a href="#">Замена дисплея</a>
+        </div>
+        <div class="problems">
+          <h1>Замена экрана Xiaomi Redmi Note 9s / 9 Pro</h1>
+          <p>Стоимость замены разбитого дисплея Xiaomi Redmi Note 9s / 9 Pro указана <span>уже с учетом запчастей и
+              работы.</span></p>
+        </div>
+        <div class="problems__table table">
+          <div class="circle"></div>
+          <div class="table__inner">
+            <div class="table__row">
+              <p>Услуга</p>
+              <span class="first-elem" >Замена дисплея Xiaomi Redmi Note 9s / 9 Pro</span>
+              <span>Защитное стекло</span>
+              <h5 class="date"></h5>
+            </div>
+            <div class="table__row-wrapper">
+              <div class="table__row">
+                <p>Стоимость</p>
+                <span class="first-elem price" ><span class="oldprice" >2500 ₽</span>2500 ₽</span>
+                <span>300 ₽</span>
+                
+              </div>
+              <div class="table__row">
+                <p>Время</p>
+                <span class="first-elem" >180 мин.</span>
+                <span>5 мин.</span>
+                
+              </div>
+              <div class="table__row">
+                <p>Гарантия</p>
+                <span class="first-elem" >3 мес.</span>
+                <span>-</span>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <button class="order btn btn-default">Бесплатная консультация</button>
+        <div class="action">
+          <h3>Не знаете, что с вашим телефоном?</h3>
+          <p>Пишите, заходите. Даже, если вы откажетесь от ремонта, диагностика будет бесплатной!</p>
+          <div class="action__btn">
+            <a class="btn btn default" href="tel:88129321264">8 812 932-12-64</a>
+            <a class="whatsapp" href="#">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('_footer.html')
+  @@include('_popup.html')
+
+  <script src="js/script.min.js"></script>
+  <!-- <script src="js/common.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+@import "mixin";
+@import "fonts";
+@import "normalize";
+
+// Переменные
+$maxwidth: 1400px;
+$minwidth: 320px;
+$maxwidthcontainer: 1240px;
+
+
+// Цвет 
+
+$orange: #ff6700;
+$bluegreen: #03b6b3;
+$bluegreenhover: #04bbb8;
+$yellow: #FFD644;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', serif;
+  font-size: 22px;
+  font-weight: medium;
+  color: #313131;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: $maxwidthcontainer;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@import "components/header";
+@import "main";
+@import "components/footer";
+@import "components/popup";
+@import "problems";

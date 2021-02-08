@@ -1,0 +1,124 @@
+.bread {
+  color: #454242;
+  font-size: 16px;
+  margin-top: 40px;
+  img {
+    padding: 0 7px;
+  }
+  a {
+    &:last-child {
+      color: #bababa;
+    }
+  }
+}
+
+.problems {
+  max-width: 900px;
+  h1 {
+    font-size: 38px;
+    margin-top: 30px;
+  }
+  p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #504f4f;
+    line-height: 30px;
+    span {
+      font-weight: 600;
+    }
+  }
+}
+
+.table {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(61, 59, 59, 0.37);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  .circle {
+    background-color: $yellow;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    right: -30px;
+    top: -100px;
+    border-radius: 50%;
+    z-index: -1;
+
+  }
+  &__inner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5px 20px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #E9E9E9;
+      top: 80px;
+      left: 0;
+    }
+  }
+  &__row-wrapper {
+    display: flex;
+    flex: 0 0 45%;
+    justify-content: space-between;
+  }
+  &__row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-right: 15px;
+    .oldprice {
+      color: $bluegreen;
+      text-decoration: line-through;
+      margin-right: 20px;
+      font-size: 18px;
+    }
+    .price {
+      font-weight: 600;
+    }
+    p {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .first-elem {
+      margin-top: 25px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 20px;
+      margin-top: 25px;
+    }
+    h5 {
+      color: #32BA7C;
+      font-weight: 400;
+      font-size: 17px;
+      position: relative;
+      padding-left: 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url(../img/price.svg);
+        width: 30px;
+        height: 30px;
+        left: 0;
+        top: -6px;
+      }
+    }
+  }
+}
+
+.order {
+  border-radius: 30px;
+  padding: 10px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+  
+}
